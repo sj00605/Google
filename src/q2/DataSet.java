@@ -142,6 +142,8 @@ public class DataSet {
 			ds.insert(array1[i]);
 		}
 		
+		
+		//Test remove duplicate
 		ds.prettyPrint();
 		System.out.println("Remove 3");
 		ds.remove(3);
@@ -150,6 +152,26 @@ public class DataSet {
 		
 		System.out.println("Remove 3");
 		ds.remove(3);
+		System.out.println();
+		ds.prettyPrint();
+		
+		//Test remove first 
+		ds = new DataSet();
+		for(int i=0; i<array1.length; i++){
+			
+			ds.insert(array1[i]);
+		}
+		
+		ds.prettyPrint();
+		System.out.println("Remove 56 (first)");
+		ds.remove(56);
+		System.out.println();
+		ds.prettyPrint();
+		
+		//remove last
+		ds.prettyPrint();
+		System.out.println("Remove 7 (last)");
+		ds.remove(7);
 		System.out.println();
 		ds.prettyPrint();
 		
